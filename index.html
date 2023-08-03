@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iframe Communication</title>
+  </head>
+  <body>
+    <script>
+      const dataObject = { message: 'Hello from the iframe!', value: 42 };
+      window.parent.postMessage(JSON.stringify(dataObject), '*', 'FLUTTER');
+    </script>
+  </body>
+</html>
