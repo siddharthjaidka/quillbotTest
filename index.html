@@ -12,7 +12,15 @@ setTimeout((0 => parent.postMessage(dataObject, "https://siddharthjaidka.github.
 
             dataObject.message = 'Hello from the iframe! 2';
 
-      setTimeout((0 => parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
+      setTimeout((0 => postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
+
+            dataObject.message = 'Hello from the iframe! 3';
+
+            setTimeout((0 => window.parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
+            dataObject.message = 'Hello from the iframe! 4';
+
+
+            setTimeout((0 => window.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
 
 
     </script>
