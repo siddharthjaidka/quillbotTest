@@ -7,8 +7,14 @@
   <body>
     <script>
       const dataObject = { message: 'Hello from the iframe!', value: 42 };
+setTimeout((0 => parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 2000);
+      
 
-      parent.postMessage(dataObject, "https://siddharthjaidka.github.io");
+            dataObject.message = 'Hello from the iframe! 2';
+
+      setTimeout((0 => parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
+
+
     </script>
   </body>
 </html>
