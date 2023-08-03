@@ -7,7 +7,7 @@
   <body>
     <script>
       const dataObject = { message: 'Hello from the iframe!', value: 42 };
-      parent.postMessage(JSON.stringify(dataObject), '*', 'FLUTTER');
+      parent.postMessage("desktop", '*', 'FLUTTER');
     </script>
   </body>
 </html>
