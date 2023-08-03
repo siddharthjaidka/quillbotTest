@@ -20,7 +20,7 @@ setTimeout(() => parent.postMessage(dataObject, "https://siddharthjaidka.github.
             dataObject.message = 'Hello from the iframe! 4';
 
 
-            setTimeout(() => FLUTTER.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
+            setTimeout(() => window.FLUTTER.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
 
 
     </script>
