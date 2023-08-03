@@ -7,20 +7,20 @@
   <body>
     <script>
       const dataObject = { message: 'Hello from the iframe!', value: 42 };
-setTimeout((0 => parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 2000);
+setTimeout(() => parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 2000);
       
 
             dataObject.message = 'Hello from the iframe! 2';
 
-      setTimeout((0 => postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
+      setTimeout(() => postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
 
             dataObject.message = 'Hello from the iframe! 3';
 
-            setTimeout((0 => window.parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
+            setTimeout(() => window.parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
             dataObject.message = 'Hello from the iframe! 4';
 
 
-            setTimeout((0 => window.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
+            setTimeout(() => window.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
 
 
     </script>
