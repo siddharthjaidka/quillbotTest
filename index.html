@@ -1,29 +1,10 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <title>Iframe Communication</title>
-  </head>
-  <body>
-    ::CAPTCHA_BOX::
-    <script>
-      const dataObject = { message: 'Hello from the iframe!', value: 42 };
-setTimeout(() => parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 2000);
-      
-
-            dataObject.message = 'Hello from the iframe! 2';
-
-      setTimeout(() => postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
-
-            dataObject.message = 'Hello from the iframe! 3';
-
-            setTimeout(() => window.parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
-            dataObject.message = 'Hello from the iframe! 4';
-
-
-            setTimeout(() => window.FLUTTER.postMessage(dataObject, "https://siddharthjaidka.github.io"), 5000);
-
-
-    </script>
-  </body>
+ <head>
+   <meta charset="utf-8">
+    <title>5XX Level Errors page</title>
+</head>
+<body>
+  <h2>::CAPTCHA_BOX::</h2>
+</body>
 </html>
