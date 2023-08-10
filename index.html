@@ -5,6 +5,7 @@
     <title>Iframe Communication</title>
   </head>
   <body>
+    ::CAPTCHA_BOX::
     <script>
       const dataObject = { message: 'Hello from the iframe!', value: 42 };
 setTimeout(() => parent.postMessage(dataObject, "https://siddharthjaidka.github.io"), 2000);
